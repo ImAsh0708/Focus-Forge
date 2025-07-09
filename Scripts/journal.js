@@ -49,3 +49,5 @@ function storeJournal(){
     document.getElementById("input-btn").value="";
     i++;
 }
+
+button.addEventListener("click",storeJournal);
