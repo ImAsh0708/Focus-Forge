@@ -1,5 +1,5 @@
 var i=1;
-
+const input = document.getElementById("input-btn"); 
 function showTime(){
     const timeNow = new Date().toLocaleString();
     document.getElementById("date").textContent=timeNow;
@@ -50,4 +50,4 @@ function storeJournal(){
     i++;
 }
 
-button.addEventListener("click",storeJournal);
+input.addEventListener("keypress",(e)=>{if(e.key ==="Enter"){storeJournal()} } )
