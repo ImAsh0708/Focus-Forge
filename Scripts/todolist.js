@@ -1,5 +1,5 @@
 let i=1;
-
+const box = document.getElementById("input-box-text"); 
 function createTask(){
     const taskContainer = document.createElement("div");
     taskContainer.setAttribute("id","task-"+i);
@@ -35,7 +35,7 @@ function addTask(){
     i++;
     return;
 }
-
+box.addEventListener("keypress",(e)=>{if(e.key==="Enter"){addTask()}})
 let j=1;
 
 function createStructure(){
