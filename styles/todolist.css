@@ -1,0 +1,202 @@
+/*{
+    margin:0;
+}*/
+
+html{
+    background-color: #A8D9B4;
+}
+
+#menu-bar{
+    position: fixed;
+    right: 10%;
+    top: 5%;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: lightgray;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+.menuButton{
+    display: none;
+}
+
+#todo-href{
+    color: green;
+    border: 1px solid blanchedalmond;
+}
+
+#title {
+    background-color: #22E685;
+    width: 85%;
+    margin: auto;
+
+}
+
+#title h1{
+    color: white;
+    margin-left: 10px;
+}
+
+#input-unit {
+    margin-top: 5%;
+    margin-left: 7%;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+#input-unit #input-box {
+    flex-basis: 75%;
+    width: 100%;
+}
+
+input {
+    height: 100%;
+    width:99%;
+}
+
+#submit-btn button {
+    width: 90%;
+    height: 110%;
+    margin-top: 3px;
+    margin-left: 10%;
+    background-color: darkcyan;
+    border-radius: 2px;
+    color: white;
+    border: 0px;
+}
+
+#input-unit #submit-btn {
+    flex-basis: 25%;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+#task-list h2 {
+    margin-top:2%;
+    margin-left:7%;
+}
+
+#task-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    padding: 4px;
+}
+
+#task-container .task {
+    border: 1px solid black;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+    margin-bottom: 6px;
+    border-radius: 6px;
+}
+
+#task-container .task-bar {
+    height: 100%;
+    width: 100%;
+    flex-basis: 80%;
+    margin-top: 6px;
+}
+
+#task-container .done-btn button {
+    width: 150%;
+    height: 100%;
+    margin-left: 4px;
+    border-radius: 6px;
+    background-color: #5FD9A7;
+    border: 0px;
+}
+
+#done-task{
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 5px;
+    width: 80%;
+    padding: 7px;
+}
+
+#done-title h2{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#done-tasks .done {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+#done-tasks .done p{
+    padding: 5px;
+}
+
+#github-1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+}

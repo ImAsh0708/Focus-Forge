@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../icons/workplace.jpg);
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: lightgray;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+.menuButton{
+    display: none;
+}
+
+#text-writing{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    padding: 5px;
+    color: white;
+}
+
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+#softwares{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.soft-class {
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border: 1px solid slateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.soft-class:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*#software-showcase{
+    color: white;
+    background-image: url(../icons/workplace-blur.png);
+    background-size:cover;
+    background-position: center;
+    margin-bottom: 200px;
+}
+
+ */
+
+#github-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 750px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+
+    #text-writing h2{
+        font-size: 1.5rem;
+    }
+    #softwares{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+}
+
+#menu-bar{
+    position: fixed;
+    right: 4%;
+    top: 3%;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: lightgray;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+.menuButton{
+    display: none;
+}
+
+#jrnl-href{
+    color: green;
+    border: 1px solid blanchedalmond;
+}
+
+body{
+    width: 500px;
+}
+
+#title {
+    height: 50px;
+    background-color: red;
+    color: White;
+    border: 1px solid red;
+}
+
+#ttl h1 {
+    margin-left: 4%;
+}
+
+#top-box {
+    display: flex;
+    background-color: #F54631;
+    flex-direction: column;
+    align-items: center;
+}
+
+#date-box {
+    display: flex;
+    width: 100%;
+    flex-basis: 30%;
+}
+
+#date-box #date{
+    flex-basis: 70%;
+    margin-left: 4%;
+    font-size: 0.7rem;
+}
+
+#input-box {
+    display: flex;
+    width: 100%;
+    flex-basis: 70%;
+    margin-bottom: 14px;
+}
+
+#input-box #inputt {
+    flex-basis: 80%;
+}
+#input-box input {
+    margin-left: 4%;
+    width: 90%;
+    border-radius: 5px;
+}
+
+#input-box #sub-btn {
+    flex-basis: 30%;
+}
+
+#sub-btn button {
+    margin-left: 20%;
+}
+
+#journal-title h3 {
+    margin-left: 2.4%;
+    margin-top: 1.5%;
+}
+
+#journal-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    width: 576px;
+}
+
+#journal-list h6{
+    font-size: 0.6rem;
+    margin-left: 2%;
+    margin-top: 2%;
+    opacity: 0.6;
+}
+
+#journal-list p {
+    width: 500px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+@media (min-width: 576px){
+    body{
+        width: 100%;
+    }
+
+    #journal-list p,#journal-list{
+        width: 100%;
+    }
+}
+
+#github-1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+}
