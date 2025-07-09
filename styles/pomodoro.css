@@ -169,4 +169,9 @@ nav li:first-child{
     #top-btn button, #short-break button, #long-break button{
     font-size: 0.6rem;
     }   
+
+    .title h1{
+        width: 70%;
+        margin-left: 15%;
+    }
 }
