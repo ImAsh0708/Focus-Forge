@@ -23,17 +23,17 @@ function display(){
 display();
 
 function journalRedir(){
-    window.location.href="../Elements/journal.html";
+    window.location.href="./Elements/journal.html";
     return;
 }
 
 
 function pomoRedir(){
-    window.location.href="../Elements/pomodoro.html";
+    window.location.href="./Elements/pomodoro.html";
     return;
 }
 
 function toDoRedir(){
-    window.location.href="../Elements/todolist.html";
+    window.location.href="./Elements/todolist.html";
     return;
 }
