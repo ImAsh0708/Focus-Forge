@@ -8,7 +8,6 @@ function display(){
     let textt = texts[i];
     const storage = setInterval(function (){  
         textt = textt.slice(0,1-textt.length);
-        console.log(textt);
         container.innerText=textt;
         if(textt.length===1){
             i++;
