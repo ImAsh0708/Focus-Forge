@@ -35,7 +35,6 @@ function addTask(){
     i++;
     return;
 }
-box.addEventListener("keypress",(e)=>{if(e.key==="Enter"){addTask()}})
 let j=1;
 
 function createStructure(){
@@ -65,3 +64,4 @@ function removeTask(idNumb){
     checkForEmpty();
     return;
 }
+box.addEventListener("keypress",(e)=>{if(e.key==="Enter"){addTask()}})
