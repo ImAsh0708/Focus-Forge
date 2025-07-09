@@ -33,7 +33,6 @@ function pomodoro(){
     pomo=true;
     short=false;
     long=false;
-    console.log("pomo clicked");
     min = 25;
     sec = 0;
     timer.innerHTML=min+":0"+sec;
