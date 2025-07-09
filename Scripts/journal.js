@@ -8,7 +8,6 @@ function showTime(){
 setInterval(showTime,1000);
 
 
-console.log(i);
 function createJournalLayout() {
     const container = document.createElement("div");
     container.setAttribute("id","journal-"+i);
@@ -37,7 +36,6 @@ function storeJournal(){
     createJournalLayout();
     const h6Container = document.createElement("h6");
     h6Container.textContent=Datee.toLocaleString();
-    console.log(h6Container);
     document.getElementById("date-jrnl-"+i).appendChild(h6Container);
     const pContainer = document.createElement("p");
     pContainer.textContent=input.trim();
