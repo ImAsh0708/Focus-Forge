@@ -159,3 +159,14 @@ nav li:first-child{
     bottom: 0;
     right: 50%;
 }
+
+@media (max-width: 576px){
+
+    #act-timer #timer-act {
+        font-size: 6rem;
+    }
+
+    #top-btn button, #short-break button, #long-break button{
+    font-size: 0.6rem;
+    }   
+}
