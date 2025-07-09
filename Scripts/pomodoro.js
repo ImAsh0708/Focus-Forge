@@ -10,6 +10,7 @@ min = 25;
 sec = 0;
 
 function pomodoro(){
+    if(timerState == true){return;}
     pomo=true;
     short=false;
     long=false;
@@ -28,6 +29,7 @@ function pomodoro(){
 pomodoro()
 
 function shortBreak(){
+    if(timerState == true){return;}
     short=true;
     long=false;
     pomo=false;
@@ -43,6 +45,7 @@ function shortBreak(){
 }
 
 function longBreak(){
+    if(timerState == true){return;}
     long=true;
     short=false;
     pomo=false;
