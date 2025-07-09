@@ -112,8 +112,11 @@ function start()
                 btn.textContent="Start";
                 timerState=false;
                 timer.innerHTML="00:00";
-                alert("Congratulations, you can now take a short break");
-                shortBreak();
+                if(pomo===true){alert("Congratulations, you can now take a short break");
+                               shortBreak();}
+                if(short === true || long ===true){alert("Start the grind");
+                pomodoro();
+                }
                 return;
             }
             if(sec<0 && min>0)
