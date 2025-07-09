@@ -85,8 +85,6 @@ function start()
         if(timerState == true){return;}
         timerState=true;
         let duration;
-        let min=1;
-        let sec=0;
         if(long === true && short===false && pomo===false){
             duration = 15*60;
         }
