@@ -27,6 +27,29 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    const start = localStorage.getItem("pomoStartTime");
+    const duration = localStorage.getItem("pomoDuration");
+
+    if (start && duration) {
+      const elapsed = Math.floor((Date.now() - parseInt(start)) / 1000);
+      const remaining = parseInt(duration) - elapsed;
+
+      if (remaining > 0) {
+        clearInterval(timers);
+        runCountdown(remaining);
+      } else {
+        localStorage.removeItem("pomoStartTime");
+        localStorage.removeItem("pomoDuration");
+        timer.textContent = "00:00";
+        timerState = false;
+        btn.textContent = "Start";
+        shortBreak();
+      }
+    }
+  }
+});
 
 function pomodoro(){
     if(timerState == true){return;}
@@ -140,7 +163,7 @@ function start()
         timerState = false;
         btn.textContent="Start";
 
-        if(pomo === true){
+        if(long === true){
             pomodoro();
             timer.innerHTML="25:00";
         }
